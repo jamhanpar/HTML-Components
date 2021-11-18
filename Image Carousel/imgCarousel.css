@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-carousel {
+  border: 1em solid white;
+  /* display: grid;
+  grid: auto / repeat(7, auto);
+  grid-gap: 1em; */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+&::-webkit-scrollbar {
+  display: none;
+}
+
+.card-carousel::-webkit-scrollbar {
+  /* height: 0; */
+  display: none;
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin-right: 3px;
+  /* scroll-snap-align: center; */
+  flex: 0 0 auto;
+}
