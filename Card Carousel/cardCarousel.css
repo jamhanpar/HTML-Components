@@ -32,7 +32,7 @@ a {
 } */
 
 .card {
-  /* border       : 1px solid blue; */
+  border          : 1px solid blue;
   width           : 300px;
   box-shadow      : 2px 2px 30px rgba(0, 0, 0, 0.2);
   border-radius   : 10px;
@@ -45,8 +45,8 @@ a {
 }
 
 .slide-img {
-  /* border: 1px solid green; */
-  height  : 450px;
+  border  : 1px solid green;
+  height  : 300px;
   position: relative;
 }
 
@@ -58,6 +58,7 @@ a {
 }
 
 .detail-box {
+  border         : 1px solid red;
   width          : 100%;
   display        : flex;
   justify-content: space-between;
@@ -68,6 +69,7 @@ a {
 }
 
 .type {
+  border        : 1px solid orange;
   display       : flex;
   flex-direction: column;
 }
@@ -93,6 +95,7 @@ a {
 }
 
 .overlay {
+  border          : 1px solid grey;
   background-color: rgba(92, 95, 236, 0.6);
   width           : 100%;
   height          : 100%;
@@ -106,6 +109,7 @@ a {
 }
 
 .buy-btn {
+  border          : 1px solid red;
   width           : 160px;
   height          : 40px;
   justify-content : center;
@@ -148,15 +152,18 @@ a {
 }
 
 .cs-hidden {
-  display: flex;
-  flex-direction: row;
+  display        : flex;
+  flex-direction : row;
   justify-content: center;
 }
 
 .slider {
+  border         : 1px solid greenyellow;
   width          : 100%;
   height         : 100vh;
   display        : flex;
-  justify-content: center;
+  justify-content: start;
   align-items    : center;
+  overflow-x     : auto;
+  overflow-y     : hidden;
 }
