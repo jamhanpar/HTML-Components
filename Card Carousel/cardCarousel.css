@@ -159,7 +159,7 @@ a {
 
 .slider {
   border         : 1px solid greenyellow;
-  width: 50%;
+  width          : 50%;
   height         : 75%;
   display        : flex;
   justify-content: start;
