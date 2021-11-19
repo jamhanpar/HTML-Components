@@ -6,26 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Carousel</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="cardCarousel.css" />
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
+    <link rel="stylesheet" type="text/css" href="cardCarousel.css" />
+    <link rel="stylesheet" type="text/css" href="lightslider.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="lightslider.js"></script>
 </head>
 
 <body>
     <!-- Tutorial Link: https://www.youtube.com/watch?v=Qc-LFzxoU6Q -->
 
-    <!-- <div class="carousel"> -->
-        <div class="card">
-            <div class="slide-img">
-                <img src="https://media.istockphoto.com/photos/rocky-mountains-and-autumnal-forest-with-colorful-trees-high-mountain-picture-id1282522992?b=1&k=20&m=1282522992&s=170667a&w=0&h=W_7cRAwDTWOqqXF3g9zwOaCMgol1-Vb4rYtlqBbJMYE=" alt="">    
-            </div>
-            <div class="detail-box">
-                <div class="type">
-                    <a href="#">Yosemite</a>
-                    <span>Hiking</span>
+    <section class="slider">
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="card">
+                    <div class="slide-img">
+                        <img src="https://media.istockphoto.com/photos/rocky-mountains-and-autumnal-forest-with-colorful-trees-high-mountain-picture-id1282522992?b=1&k=20&m=1282522992&s=170667a&w=0&h=W_7cRAwDTWOqqXF3g9zwOaCMgol1-Vb4rYtlqBbJMYE="
+                            alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Yosemite</a>
+                            <span>Hiking</span>
+                        </div>
+                        <a href="#" class="price">$</a>
+                    </div>
                 </div>
-                <a href="#" class="price">$</a>
+            </li>
+            <li class="item-b">
+                <div class="card">
+                    <div class="slide-img">
+                        <img src="https://images.unsplash.com/photo-1539604880233-d282d9bac272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                            alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Ice Cave</a>
+                            <span>Hiking</span>
+                        </div>
+                        <a href="#" class="price">$</a>
+                    </div>
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="card">
+                    <div class="slide-img">
+                        <img src="https://images.unsplash.com/photo-1475776408506-9a5371e7a068?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1358&q=80"
+                            alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Mt. Fuji</a>
+                            <span>Hiking</span>
+                        </div>
+                        <a href="#" class="price">$$</a>
+                    </div>
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="card">
+                    <div class="slide-img">
+                        <img src="https://images.unsplash.com/photo-1505521377774-103a8cc2f735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                            alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Yosemite</a>
+                            <span>Hiking</span>
+                        </div>
+                        <a href="#" class="price">$</a>
+                    </div>
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="card">
+                    <div class="slide-img">
+                        <img src="https://images.unsplash.com/photo-1571685330542-0da6a6a8edc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                            alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Yosemite</a>
+                            <span>Hiking</span>
+                        </div>
+                        <a href="#" class="price">$</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- <div class="carousel"> -->
+    <!-- <div class="card">
+        <div class="slide-img">
+            <img src="https://media.istockphoto.com/photos/rocky-mountains-and-autumnal-forest-with-colorful-trees-high-mountain-picture-id1282522992?b=1&k=20&m=1282522992&s=170667a&w=0&h=W_7cRAwDTWOqqXF3g9zwOaCMgol1-Vb4rYtlqBbJMYE="
+                alt="">
+            <div class="overlay">
+                <a href="#" class="buy-btn">Buy Now</a>
             </div>
         </div>
+        <div class="detail-box">
+            <div class="type">
+                <a href="#">Yosemite</a>
+                <span>Hiking</span>
+            </div>
+            <a href="#" class="price">$</a>
+        </div>
+    </div> -->
     <!-- </div> -->
 </body>
 
