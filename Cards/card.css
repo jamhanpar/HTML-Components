@@ -20,19 +20,7 @@ a {
   text-decoration: none;
 }
 
-/* slider */
-/* .carousel {
-  border       : 1px solid red;
-  width        : 75%;
-  height       : 500px;
-  box-shadow   : 2px 2px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow     : hidden;
-  position     : absolute;
-} */
-
 .card {
-  /* border       : 1px solid blue; */
   width        : 300px;
   box-shadow   : 2px 2px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -44,7 +32,6 @@ a {
 }
 
 .slide-img {
-  /* border: 1px solid green; */
   height: 450px;
 }
 
