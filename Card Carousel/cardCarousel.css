@@ -21,15 +21,22 @@ a {
 }
 
 /* slider */
-/* .carousel {
-  border       : 1px solid red;
-  width        : 75%;
-  height       : 500px;
-  box-shadow   : 2px 2px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow     : hidden;
-  position     : absolute;
-} */
+.cs-hidden {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-evenly;
+}
+
+.slider {
+  border         : 1px solid greenyellow;
+  width          : 50%;
+  height         : 75%;
+  display        : flex;
+  justify-content: start;
+  align-items    : center;
+  overflow-x     : auto;
+  overflow-y     : hidden;
+}
 
 .card {
   border          : 1px solid blue;
@@ -149,21 +156,4 @@ a {
   100% {
     opacity: 1;
   }
-}
-
-.cs-hidden {
-  display        : flex;
-  flex-direction : row;
-  justify-content: center;
-}
-
-.slider {
-  border         : 1px solid greenyellow;
-  width          : 50%;
-  height         : 75%;
-  display        : flex;
-  justify-content: start;
-  align-items    : center;
-  overflow-x     : auto;
-  overflow-y     : hidden;
 }
